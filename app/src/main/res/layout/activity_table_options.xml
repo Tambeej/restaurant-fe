@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tableOptionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/tableOptionsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/how_can_we_help_you"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"
+            android:textColor="#FF69B4"
+            android:fontFamily="cursive"/>
+
+        <Button
+            android:id="@+id/callWaiterButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/call_waiter"
+            android:backgroundTint="#FF69B4"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="cursive" />
+
+        <Button
+            android:id="@+id/requestWaterButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/request_water"
+            android:backgroundTint="#FF69B4"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="cursive"/>
+
+        <Button
+            android:id="@+id/requestBillButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/request_bill"
+            android:backgroundTint="#FF69B4"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="cursive" />
+
+        <Button
+            android:id="@+id/orderYourselfButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/order_by_yourself"
+            android:backgroundTint="#FF69B4"
+            android:textColor="@android:color/white"
+            android:fontFamily="cursive" />
+    </LinearLayout>

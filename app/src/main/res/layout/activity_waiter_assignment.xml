@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/assignmentsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:fontFamily="cursive">
+
+        <TextView
+            android:id="@+id/assignmentsLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/assign_waiter_to_table"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="cursive"/>
+
+        <Spinner
+            android:id="@+id/waiterSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive" />
+
+        <Spinner
+            android:id="@+id/tableSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="cursive" />
+
+        <Button
+            android:id="@+id/assignButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/assign"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#FF69B4"
+            android:fontFamily="cursive" />
+
+    </LinearLayout>
+</ScrollView>

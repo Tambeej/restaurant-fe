@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/orderStatusTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/order_status"
+            android:textSize="24sp"
+            android:textColor="#FF69B4"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/orderStatusRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingBottom="8dp" />
+
+        <Button
+            android:id="@+id/addMoreDishesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_more_dishes"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#FF69B4"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>

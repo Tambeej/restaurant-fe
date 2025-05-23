@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/qrScannerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/qrScannerTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/scan_your_table_qr"
+        android:textColor="#FF69B4"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/previewView"/>
+
+    <!-- QR Scanner square -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toBottomOf="@id/qrScannerTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/manualTableIdInput"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/manualTableIdInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_table_id"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/previewView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:textColor="#FF69B4"
+        />
+
+    <!-- Test button -->
+    <Button
+        android:id="@+id/testButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/test_redirect"
+        app:layout_constraintTop_toBottomOf="@id/manualTableIdInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#FF69B4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

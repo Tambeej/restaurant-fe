@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/restaurantMenuLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/restaurantMenuTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/restaurant_menu"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#FF69B4"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/restaurantMenuRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:padding="8dp"
+        android:overScrollMode="always"
+        app:layout_constraintTop_toBottomOf="@id/restaurantMenuTitle"
+        app:layout_constraintBottom_toTopOf="@id/placeOrderButton"/>
+
+    <Button
+        android:id="@+id/placeOrderButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/place_order"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FF69B4"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

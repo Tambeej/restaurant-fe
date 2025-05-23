@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal" android:padding="12dp">
+
+    <TextView
+        android:id="@+id/kitchenDishName"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="@string/dish_name"
+        android:textSize="20sp"
+        android:fontFamily="cursive" />
+
+    <TextView
+        android:id="@+id/dishStatusTableNum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/tablenum"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="cursive" />
+
+    <TextView
+        android:id="@+id/kitchenDishStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ordered"
+        android:textSize="14sp"
+        android:paddingEnd="8dp"
+        android:fontFamily="cursive"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/kitchenDishButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ready"
+        android:backgroundTint="#FF69B4"
+        android:fontFamily="cursive"/>
+</LinearLayout>

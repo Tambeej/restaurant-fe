@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="emailEditText" type="id" />
+    <item name="passwordEditText" type="id" />
+    <item name="restaurantMenuLayout" type="id" />
+    <item name="dishRecyclerView" type="id"/>
+</resources>
