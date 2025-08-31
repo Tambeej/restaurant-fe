@@ -8,6 +8,7 @@ import com.tamar.restaurant.models.Restaurant;
 import com.tamar.restaurant.models.Order;
 import com.tamar.restaurant.models.user.User;
 import com.tamar.restaurant.models.WaiterCall;
+import com.tamar.restaurant.models.WaiterRestaurant;
 
 import java.util.List;
 
@@ -78,5 +79,10 @@ public interface ApiService {
             @Path("orderItemId") Long orderItemId, @Path("status") OrderStatus status);
     @GET("restaurants/get_restaurant_from_kitchen")
     Call<Restaurant> getRestaurantFromKitchenId(@Header("Authorization") String idToken,@Query("kitchen_id") Long kitchen_id );
-}
 
+    @GET("restaurants/my-restaurant")
+    Call<Restaurant> getMyRestaurant(@Header("Authorization") String token);
+
+    @POST("waiter-restaurant/assign-by-email")
+    Call<WaiterRestaurant> assignWaiterByEmail(@Header("Authorization") String token, @Query("restaurant_id") Long restaurantId, @Query("email") String email);
+}

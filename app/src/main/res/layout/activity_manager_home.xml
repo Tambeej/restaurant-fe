@@ -8,6 +8,7 @@
     android:padding="24dp">
 
     <TextView
+        android:id="@+id/restaurantTitle"
         android:text="@string/restaurant_data"
         android:textSize="32sp"
         android:textStyle="bold"
@@ -19,4 +20,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/waiterEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Waiter Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/restaurantTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="24dp" />
+
+    <Button
+        android:id="@+id/assignWaiterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assign Waiter"
+        app:layout_constraintTop_toBottomOf="@+id/waiterEmailEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
